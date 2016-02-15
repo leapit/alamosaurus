@@ -36,7 +36,7 @@ Example
         }
     }
 ```
-## custom permission like this
+## Custom permission like this
 
 ```
 var authApi = {};
@@ -82,7 +82,21 @@ Storage upload server run at 8080
 Storage download server run at 9090
 ```
 
+## Example for upload a file
+
+```
+<form action="http://localhost:8080/?token=user.token.here" enctype="multipart/form-data" method="post">
+<input type="text" name="container" value="my-path">
+<input type="text" name="tag" value="tag1">
+<input type="text" name="tag" value="tag2">
+<input type="text" name="description" value="miaosu">
+<br />
+<input type="text" name="sharelevel" value="1">
+<input type="text" name="shareto" value="VJZnd0PFl">
+<input type="text" name="shareto" value="E1QwuAPKe">
+<br><input type="file" name="upload" multiple="multiple">
+<br><input type="submit" value="Upload">
+</form>
+```
+
 ## More refer to wiki
-
-
-
