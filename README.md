@@ -1,14 +1,6 @@
 # Together Storage
 
-## Embed in your app
-
-```
-    var storage = require('./storage');
-    var permission = require('./storage.permission');
-    storage(opt, permission);
-```
-
-## Config your storage
+## Config your storage like this
 
 Example
 ```
@@ -43,6 +35,43 @@ Example
             logs:'logs'
         }
     }
+```
+## custom permission like this
+
+```
+var authApi = {};
+
+authApi = {
+    // Accepts the connection if the token are valid
+    authenticate: function authenticate(token, callback) {
+        var clientid = '';
+        var userid = '';
+        console.log(':::::::::: checking token ::::::::::');
+        console.log(token);
+
+        var authorized = (token === 'user.token.here');
+        if (authorized) {
+            clientid = 'clientid';
+            userid = 'userid';
+            callback(null, clientid, userid);
+        } else {
+            callback(new Error('token error.'), clientid, userid);
+        }
+    }
+
+};
+
+module.exports = authApi;
+
+```
+
+## Embed in your app
+
+```
+    var storage = require('./storage');
+    var config = require('./storage.config');
+    var permission = require('./storage.permission');
+    storage(config, permission);
 ```
 
 ## Start your app
