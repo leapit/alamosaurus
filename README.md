@@ -65,13 +65,19 @@ module.exports = authApi;
 
 ```
 
-## Embed in your app
+## Usage
+###1. Embed in your app(Recommend)
 
 ```
     var storage = require('./storage');
     var config = require('./storage.config');
     var permission = require('./storage.permission');
     storage(config, permission);
+```
+Example with express https://github.com/leapit/storage/wiki/Embed-in-express-js
+
+###2. Stand alone
+```
 ```
 
 ## Start your app
