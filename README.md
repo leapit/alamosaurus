@@ -74,7 +74,7 @@ module.exports = authApi;
     var permission = require('./storage.permission');
     storage(config, permission);
 ```
-Example with express https://github.com/leapit/storage/wiki/Embed-in-express-js
+Example with express [https://github.com/leapit/storage/wiki/Embed-in-express-js](https://github.com/leapit/storage/wiki/Embed-in-express-js)
 
 ###2. Stand alone
 ```
