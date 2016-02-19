@@ -1,4 +1,8 @@
-# Together Storage
+# Storage
+
+## Usage
+
+`npm install @leapit/storage`
 
 ## Config your storage like this
 
@@ -69,7 +73,7 @@ module.exports = authApi;
 ###1. Embed in your app(Recommend)
 
 ```
-    var storage = require('./storage');
+    var storage = require('@leapit/storage');
     var config = require('./storage.config');
     var permission = require('./storage.permission');
     storage(config, permission);

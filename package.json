@@ -1,0 +1,40 @@
+{
+  "name": "@leapit/storage",
+  "version": "0.1.1",
+  "description": "Storage",
+  "author": "Tam @tabenren",
+  "main": "index.js",
+  "keywords": [
+      "storage",
+      "file",
+      "mbaas"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "bluebird": "^3.1.1",
+    "body-parser": "^1.14.2",
+    "connect": "^3.4.1",
+    "connect-route": "^0.1.5",
+    "director": "^1.2.8",
+    "download": "^4.4.3",
+    "extend": "^3.0.0",
+    "file-type": "^3.4.0",
+    "formidable": "^1.0.17",
+    "fs-extra": "^0.26.5",
+    "gm": "^1.21.1",
+    "lodash": "^4.0.0",
+    "mime": "^1.3.4",
+    "mongodb": "^2.1.4",
+    "node-static": "^0.7.7",
+    "oppressor": "0.0.1",
+    "puid": "^1.0.5",
+    "router": "^1.1.4",
+    "shortid": "^2.2.4"
+  },
+  "engines": {
+    "node": "~0.10.0 || ~0.12.0 || ~4.1.0"
+  }
+}
